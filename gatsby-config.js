@@ -35,14 +35,14 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/willholsten-icon.png` // This path is relative to the root of the site.
       }
-    },
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: /assets/
-        }
-      }
     }
+    // {
+    //   resolve: 'gatsby-plugin-react-svg',
+    //   options: {
+    //     rule: {
+    //       include: /assets/
+    //     }
+    //   }
+    // }
   ]
 }
