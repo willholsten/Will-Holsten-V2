@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav, Navbar, Container } from 'react-bootstrap'
-import BurgerMenu from './BurgerMenu'
+import BurgerMenu from './burgerMenu'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
