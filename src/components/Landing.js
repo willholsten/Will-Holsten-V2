@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, ButtonToolbar, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import WillHolstenCV from './../images/WillHolstenCV.pdf'
+import WillHolstenCV from '../images/WillHolstenCV.pdf'
 
 export default class Landing extends React.Component {
   render() {

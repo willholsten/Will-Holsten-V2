@@ -2,12 +2,12 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import Landing from './../components/landing'
-import About from './../components/about'
-import Interests from './../components/interests'
-import TechStack from './../components/techStack'
-import Work from './../components/work'
-import Contact from './../components/contact'
+import Landing from '../components/landing'
+import About from '../components/about'
+import Interests from '../components/interests'
+import TechStack from '../components/techStack'
+import Work from '../components/work'
+import Contact from '../components/contact'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
 import {
