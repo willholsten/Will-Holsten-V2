@@ -1,0 +1,16 @@
+.skills {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-medium;
+  align-items: baseline;
+}
+
+.skill-icon {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.col-sm-3 {
+  margin: 20px 0;
+}

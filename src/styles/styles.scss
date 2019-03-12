@@ -1,0 +1,23 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+// Global Variables + Functions
+@import 'variables';
+@import 'colors';
+@import 'functions';
+@import 'layout';
+@import 'global';
+
+// Templates
+@import 'header';
+@import 'footer';
+@import 'burger-menu';
+@import 'burger-animations';
+@import 'buttons';
+@import 'modals';
+
+// Components
+@import 'landing';
+@import 'interests';
+@import 'tech-stack';
+@import 'work';
+@import 'contact';

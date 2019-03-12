@@ -1,0 +1,61 @@
+.modal-dialog {
+  @media (max-width: $screen-sm) {
+    margin: 0 auto;
+  }
+  @media (min-width: $screen-md) {
+    max-width: 650px;
+  }
+
+  .modal-header {
+    .modal-title.h4 {
+      @extend h3;
+      margin-bottom: 0;
+      line-height: 1.5rem;
+    }
+
+    .close {
+      font-size: 2.5rem;
+      font-weight: 100;
+      line-height: 1rem;
+    }
+  }
+
+  .modal-content {
+    border: none;
+
+    @media (max-width: $screen-sm) {
+      border-radius: 0px;
+      height: 100vh;
+    }
+
+    .company-brief {
+      text-align: center;
+      padding: 20px 20px;
+
+      p {
+        font-family: $font-serif;
+        font-size: $font-size-medium;
+        line-height: $font-line-height-large;
+      }
+    }
+    .company-work {
+      border-top: 1px solid #dee2e6;
+      padding: 40px;
+
+      @media (min-width: $screen-sm) {
+        border-radius: 0 0 3px 3px;
+      }
+    }
+    p {
+      font-family: $font-sans-serif;
+      font-size: $font-size-normal;
+      line-height: $font-line-height-medium;
+    }
+
+    .modal-screenshot {
+      margin: 60px auto 20px;
+      max-width: 90%;
+      filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.4));
+    }
+  }
+}

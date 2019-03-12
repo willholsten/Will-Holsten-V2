@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="13.611" viewBox="0 0 35 13.611">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bc443e;
+      }
+    </style>
+  </defs>
+  <path id="npm" class="cls-1" d="M17.5,167.778H15.556v-3.889H17.5ZM35,160v11.667H17.5v1.944H9.722v-1.944H0V160ZM9.722,161.944H1.944v7.778H5.833v-5.833H7.778v5.833H9.722Zm9.722,0H11.667v9.722h3.889v-1.944h3.889Zm13.611,0H21.389v7.778h3.889v-5.833h1.944v5.833h1.944v-5.833h1.944v5.833h1.944Z" transform="translate(0 -160)"/>
+</svg>

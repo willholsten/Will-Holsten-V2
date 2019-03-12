@@ -1,42 +1,41 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import { Nav, Navbar, Container } from 'react-bootstrap'
+import BurgerMenu from './BurgerMenu'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+export default class Header extends React.Component {
+  render() {
+    return (
+      <Navbar expand="lg" fixed="top">
+        <Container>
+          <Navbar.Brand href="/">W</Navbar.Brand>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#interests">Interests</Nav.Link>
+              <Nav.Link href="#tech-stack">Tech Stack</Nav.Link>
+              <Nav.Link href="#work">Work</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link
+                target="_blank"
+                href="https://www.linkedin.com/in/willholsten/"
+                className="navbar-icon"
+              >
+                <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              </Nav.Link>
+              <Nav.Link
+                target="_blank"
+                href="https://github.com/willholsten"
+                className="navbar-icon"
+              >
+                <FontAwesomeIcon icon={['fab', 'github']} />
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <BurgerMenu />
+        </Container>
+      </Navbar>
+    )
+  }
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

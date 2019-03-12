@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29.979" viewBox="0 0 30 29.979">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.997" y1="0.158" x2="0.398" y2="0.974" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0052cc"/>
+      <stop offset="0.923" stop-color="#2684ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Atlassian-horizontal-blue-rgb" transform="translate(0.002 0.002)">
+    <g id="Blue" transform="translate(-0.002 -0.002)">
+      <path id="Path_58" data-name="Path 58" d="M8.9,29.721a.853.853,0,0,0-1.451.158L.091,44.582a.879.879,0,0,0,.786,1.272h10.24a.847.847,0,0,0,.786-.486C14.112,40.8,12.774,33.864,8.9,29.721Z" transform="translate(0.002 -15.876)" fill="url(#linear-gradient)"/>
+      <path id="Path_59" data-name="Path 59" d="M27.405.47a19.394,19.394,0,0,0-1.132,19.147l4.937,9.874a.879.879,0,0,0,.786.486H42.234a.879.879,0,0,0,.786-1.272S29.246,1.153,28.9.464A.83.83,0,0,0,27.405.47Z" transform="translate(-13.113 0.002)" fill="#2684ff"/>
+    </g>
+  </g>
+</svg>

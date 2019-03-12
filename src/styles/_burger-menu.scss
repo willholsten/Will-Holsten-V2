@@ -1,0 +1,49 @@
+.bm-cross-button {
+  button {
+    display: none;
+  }
+}
+
+.BurgerBox {
+  margin-bottom: -2px !important;
+}
+
+#sidebar {
+  background: lighten($primary-blue, 10%);
+  top: 50px;
+  padding: 50px 40px 0 0;
+  z-index: 900 !important;
+
+  @media (min-width: $screen-lg) {
+    top: 80px;
+  }
+}
+
+.bm-item {
+  padding: 0px 15px 10px 10px;
+  margin: 15px 0;
+  color: white;
+  text-align: right;
+  z-index: 999 !important;
+  text-transform: lowercase;
+  font-size: $font-size-large;
+}
+
+.bm-item:hover {
+  color: $primary-green;
+}
+
+.bm-overlay {
+  display: none !important;
+  position: absolute;
+  top: 80px;
+  z-index: 900 !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  margin-left: -70px;
+}
+
+@media (min-width: $screen-lg) {
+  .burger-container {
+    display: none;
+  }
+}

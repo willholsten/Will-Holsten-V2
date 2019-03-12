@@ -1,0 +1,23 @@
+.chart-container {
+  margin: 0 auto;
+
+  svg:not(:root) {
+    overflow: inherit;
+  }
+
+  tspan {
+    font-family: $font-sans-serif;
+  }
+}
+
+.chart-height {
+  height: 350px;
+}
+
+.interests {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing-medium;
+  align-items: baseline;
+}

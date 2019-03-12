@@ -1,21 +1,53 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Landing from './../components/Landing'
+import About from './../components/About'
+import Interests from './../components/Interests'
+import TechStack from './../components/TechStack'
+import Work from './../components/Work'
+import Contact from './../components/Contact'
+import '../styles/styles.scss'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+import ScrollableAnchor from 'react-scrollable-anchor'
+import {
+  configureAnchors,
+  goToAnchor,
+  removeHash
+} from 'react-scrollable-anchor'
 
-export default IndexPage
+export default class IndexPage extends React.Component {
+  componentDidMount() {
+    configureAnchors({ offset: -30 })
+    goToAnchor('about', false)
+    removeHash()
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO
+          title="Will Holsten | Front End Development"
+          keywords={[`gatsby`, `application`, `react`]}
+        />
+        <Landing />
+        <ScrollableAnchor id={'about'}>
+          <About />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'interests'}>
+          <Interests />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'tech-stack'}>
+          <TechStack />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'work'}>
+          <Work />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'contact'}>
+          <Contact />
+        </ScrollableAnchor>
+      </Layout>
+    )
+  }
+}
