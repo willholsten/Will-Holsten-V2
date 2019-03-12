@@ -3,11 +3,11 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Landing from '../components/landing'
-import About from '../components/about'
-import Interests from '../components/interests'
-import TechStack from '../components/techStack'
-import Work from '../components/work'
-import Contact from '../components/contact'
+import About from '../components/about.js'
+import Interests from '../components/interests.js'
+import TechStack from '../components/techStack.js'
+import Work from '../components/work.js'
+import Contact from '../components/contact.js'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
 import {
