@@ -8,7 +8,6 @@ import Interests from './../components/Interests'
 import TechStack from './../components/TechStack'
 import Work from './../components/Work'
 import Contact from './../components/Contact'
-import '../styles/styles.scss'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
 import {
