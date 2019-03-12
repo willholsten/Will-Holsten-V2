@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, ButtonToolbar, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import WillHolstenCV from './../images/WillHolstenCV.pdf'
 
 export default class Landing extends React.Component {
   render() {
@@ -21,7 +22,7 @@ export default class Landing extends React.Component {
                   icon="chevron-right"
                 />
               </Button>
-              <Button href="/page-2" variant="primary">
+              <Button href={WillHolstenCV} target="_blank" variant="primary">
                 <FontAwesomeIcon className="download" icon="download" />
                 CV
               </Button>
