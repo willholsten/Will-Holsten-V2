@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Landing from './../components/landing'
-import About from './../components/about'
+import About from './components/about'
 import Interests from './../components/interests'
 import TechStack from './../components/techStack'
 import Work from './../components/work'
