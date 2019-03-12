@@ -8,7 +8,7 @@ import Sass from './../images/brands/sass.svg'
 import Bootstrap from './../images/brands/bootstrap.svg'
 import Javascript from './../images/brands/javascript.svg'
 import Jquery from './../images/brands/jquery.svg'
-import ReactSkill from './../images/brands/react.svg'
+import ReactSvg from './../images/brands/react.svg'
 import Redux from './../images/brands/redux.svg'
 import Npm from './../images/brands/npm.svg'
 import Webpack from './../images/brands/webpack.svg'
@@ -49,7 +49,7 @@ class TechStack extends React.Component {
         },
         {
           name: 'react',
-          path: ReactSkill
+          path: ReactSvg
         },
         {
           name: 'redux',
