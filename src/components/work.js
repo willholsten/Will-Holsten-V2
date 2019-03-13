@@ -63,7 +63,11 @@ export default class Work extends React.Component {
                 Carphone.
               </p>
               <ButtonToolbar className="justify-content-center">
-                <Button variant="secondary" target="_blank">
+                <Button
+                  variant="secondary"
+                  href="https://www.idmobile.co.uk"
+                  target="_blank"
+                >
                   Visit Site
                   <FontAwesomeIcon
                     className="chevron-right"
@@ -117,7 +121,11 @@ export default class Work extends React.Component {
                 four stylish function rooms.
               </p>
               <ButtonToolbar className="justify-content-center">
-                <Button variant="secondary" target="_blank">
+                <Button
+                  variant="secondary"
+                  href="https://www.stolberg.com.au"
+                  target="_blank"
+                >
                   Visit Site
                   <FontAwesomeIcon
                     className="chevron-right"
@@ -168,7 +176,11 @@ export default class Work extends React.Component {
                 is hugely popular with the sporting community.
               </p>
               <ButtonToolbar className="justify-content-center">
-                <Button variant="secondary" target="_blank">
+                <Button
+                  variant="secondary"
+                  href="https://www.royalderbyhotel.com.au"
+                  target="_blank"
+                >
                   Visit Site
                   <FontAwesomeIcon
                     className="chevron-right"
@@ -214,7 +226,11 @@ export default class Work extends React.Component {
                 party game aimed at hen parties.
               </p>
               <ButtonToolbar className="justify-content-center">
-                <Button variant="secondary" target="_blank">
+                <Button
+                  variant="secondary"
+                  href="https://www.jizzthegame.com"
+                  target="_blank"
+                >
                   Visit Site
                   <FontAwesomeIcon
                     className="chevron-right"
@@ -232,10 +248,8 @@ export default class Work extends React.Component {
           <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pretium nibh ipsum consequat nisl vel pretium lectus quam. Augue
-              interdum velit euismod in pellentesque.
+              To create a simple straightforward website to explain how to play
+              the game and where to buy the product.
             </p>
             <h3>How I Helped</h3>
             <ul>
@@ -263,7 +277,11 @@ export default class Work extends React.Component {
                 skate apparel and hardware.
               </p>
               <ButtonToolbar className="justify-content-center">
-                <Button variant="secondary" target="_blank">
+                <Button
+                  variant="secondary"
+                  href="https://www.surfdome.com"
+                  target="_blank"
+                >
                   Visit Site
                   <FontAwesomeIcon
                     className="chevron-right"
@@ -281,10 +299,8 @@ export default class Work extends React.Component {
           <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pretium nibh ipsum consequat nisl vel pretium lectus quam. Augue
-              interdum velit euismod in pellentesque.
+              I was employed as a UX designer / front end developer at Surfdome
+              for two years, some of the contributions I made are listed below.
             </p>
             <h3>How I Helped</h3>
             <ul>
@@ -317,11 +333,14 @@ export default class Work extends React.Component {
           <Modal.Body>
             <div className="company-brief">
               <p>
-                Surfdome is an online retailer specialising in surf, snow and
-                skate apparel and hardware.
+                S&F Confectionery is a B2B importer and distributer of mints.
               </p>
               <ButtonToolbar className="justify-content-center">
-                <Button variant="secondary" target="_blank">
+                <Button
+                  variant="secondary"
+                  href="https://www.sfconfectiony.com"
+                  target="_blank"
+                >
                   Visit Site
                   <FontAwesomeIcon
                     className="chevron-right"
@@ -339,28 +358,15 @@ export default class Work extends React.Component {
           <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Pretium nibh ipsum consequat nisl vel pretium lectus quam. Augue
-              interdum velit euismod in pellentesque.
+              To create a website that would be used as a catalog to other
+              businesses to show product and packaging information.
             </p>
             <h3>How I Helped</h3>
             <ul>
-              <li>
-                Working with multiple teams including tech, design, UX and
-                trading to manage the front end of the website across 2
-                companies and 7 domains.
-              </li>
-              <li>
-                Designing and building HTML email newsletters to a target
-                audience of over 1.2 million people.
-              </li>
-              <li>
-                Lead UX designer for complete website design overhaul. Working
-                with the UX manager and tech team to produce homepage, PLP, PDP
-                and basket & checkout design improvements.
-              </li>
-              <li>Created A/B tests using Optimizely.</li>
+              <li>Complete web design.</li>
+              <li>Complete web development.</li>
+              <li>Domain and hosting management.</li>
+              <li>Product photography.</li>
             </ul>
           </Modal.Footer>
         </Modal>
