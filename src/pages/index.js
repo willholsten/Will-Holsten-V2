@@ -18,8 +18,19 @@ import {
 
 export default class IndexPage extends React.Component {
   componentDidMount() {
-    configureAnchors({ offset: -30 })
-    goToAnchor('about', false)
+    configureAnchors({ offset: -30, scrollDuration: 400 })
+    goToAnchor(
+      'about',
+      true,
+      'interests',
+      true,
+      'tech-stack',
+      true,
+      'work',
+      true,
+      'contact',
+      true
+    )
     removeHash()
   }
 

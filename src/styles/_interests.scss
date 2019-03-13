@@ -1,6 +1,7 @@
 .chart-container {
   margin: 0 auto;
 
+  width: auto;
   svg:not(:root) {
     overflow: inherit;
   }
@@ -10,14 +11,34 @@
   }
 }
 
-.chart-height {
-  height: 350px;
-}
-
 .interests {
   text-transform: uppercase;
   text-align: center;
   font-weight: $font-weight-bold;
   letter-spacing: $letter-spacing-medium;
   align-items: baseline;
+}
+
+.chart-height {
+  height: 300px;
+  div {
+    svg {
+      > g {
+        @media (min-width: $screen-md) {
+          transform: translate(300px, 0) !important;
+        }
+        > g:nth-child(2) {
+          @media (min-width: $screen-md) {
+            transform: translate(-300px, 60px) !important;
+          }
+          @media (min-width: $screen-lg) {
+            transform: translate(-100px, 60px) !important;
+          }
+          @media (min-width: $screen-xl) {
+            transform: translate(0, 60px) !important;
+          }
+        }
+      }
+    }
+  }
 }

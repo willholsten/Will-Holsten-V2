@@ -13,6 +13,12 @@
   text-transform: uppercase;
   margin: 5px;
 
+  &:focus,
+  &:active {
+    border: none;
+    box-shadow: none !important;
+  }
+
   .download {
     margin-right: 15px;
   }
@@ -30,17 +36,23 @@
 .btn-primary {
   background-color: $primary-green;
 
-  &:hover {
-    background-color: darken($primary-green, 10%);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($primary-green, 10%) !important;
   }
 }
 
 .btn-secondary {
-  background-color: #eee;
+  background-color: inherit;
+  border: 1px solid #ddd;
   color: $primary-blue;
 
-  &:hover {
-    background-color: darken(#eee, 5%);
-    color: darken($primary-blue, 10%);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken(#eee, 10%) !important;
+    border: 1px solid darken(#eee, 10%) !important;
+    color: darken($primary-blue, 10%) !important;
   }
 }
