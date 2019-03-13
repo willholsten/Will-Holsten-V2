@@ -30,7 +30,6 @@ export default class Landing extends React.Component {
             <p className="logotype-w">W</p>
           </div>
         </Container>
-        {/* <div className="round" /> */}
       </div>
     )
   }
