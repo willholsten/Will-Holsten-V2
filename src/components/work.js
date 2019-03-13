@@ -78,7 +78,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Body className="green-bg company-work">
+          <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
               To upgrade the iD Mobile basket and checkout to align with other
@@ -100,7 +100,7 @@ export default class Work extends React.Component {
                 up with reactive solutions for changing requirements.
               </li>
             </ul>
-          </Modal.Body>
+          </Modal.Footer>
         </Modal>
         {/* The Stolberg Modal */}
         <Modal
@@ -132,7 +132,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Body className="green-bg company-work">
+          <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
               To replace the outdated Wordpress website into something that
@@ -151,7 +151,7 @@ export default class Work extends React.Component {
               <li>Google Analytics integration.</li>
               <li>Email subscription and contact form management.</li>
             </ul>
-          </Modal.Body>
+          </Modal.Footer>
         </Modal>
         {/* Royal Derby Hotel Modal */}
         <Modal
@@ -183,7 +183,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Body className="green-bg company-work">
+          <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
               To create a mobile first website with scalable component based
@@ -200,7 +200,7 @@ export default class Work extends React.Component {
               <li>Google Analytics integration.</li>
               <li>Email subscription and contact form management.</li>
             </ul>
-          </Modal.Body>
+          </Modal.Footer>
         </Modal>
         {/* Jizz Modal */}
         <Modal show={this.state.show === 'jizzModal'} onHide={this.handleClose}>
@@ -229,7 +229,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Body className="green-bg company-work">
+          <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -246,7 +246,7 @@ export default class Work extends React.Component {
               </li>
               <li>Domain and hosting management.</li>
             </ul>
-          </Modal.Body>
+          </Modal.Footer>
         </Modal>
         {/* Surfdome Modal */}
         <Modal
@@ -278,7 +278,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Body className="green-bg company-work">
+          <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -304,7 +304,7 @@ export default class Work extends React.Component {
               </li>
               <li>Created A/B tests using Optimizely.</li>
             </ul>
-          </Modal.Body>
+          </Modal.Footer>
         </Modal>
         {/* SF Confectionery Modal */}
         <Modal
@@ -336,7 +336,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Body className="green-bg company-work">
+          <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -362,7 +362,7 @@ export default class Work extends React.Component {
               </li>
               <li>Created A/B tests using Optimizely.</li>
             </ul>
-          </Modal.Body>
+          </Modal.Footer>
         </Modal>
         <Row noGutters className="work-tiles">
           <Col xs={12} sm={6} md={4} className="work-one-bg">

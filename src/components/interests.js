@@ -1,25 +1,32 @@
 import React from 'react'
+import { render } from 'react-dom'
 import { Container } from 'react-bootstrap'
 import { ResponsivePie } from '@nivo/pie'
 
 const data = [
   {
-    id: 'UX Design',
-    label: 'UX Design',
-    value: 20,
-    color: 'hsl(51, 70%, 50%)'
+    id: 'Sports',
+    label: 'Sports',
+    value: 30,
+    color: 'hsl(9, 70%, 50%)'
   },
   {
-    id: 'Web Development',
-    label: 'Web Development',
-    value: 40,
-    color: 'hsl(60, 70%, 50%)'
+    id: 'Travelling',
+    label: 'Travelling',
+    value: 30,
+    color: 'hsl(9, 70%, 50%)'
   },
   {
     id: 'Arsenal',
     label: 'Arsenal',
     value: 10,
     color: 'hsl(15, 70%, 50%)'
+  },
+  {
+    id: 'Nintendo Switch',
+    label: 'Nintendo Switch',
+    value: 5,
+    color: 'hsl(9, 70%, 50%)'
   },
   {
     id: 'Netflix',
@@ -30,13 +37,7 @@ const data = [
   {
     id: 'Electric Scooters',
     label: 'Electric Scooters',
-    value: 10,
-    color: 'hsl(9, 70%, 50%)'
-  },
-  {
-    id: 'Travelling',
-    label: 'Travelling',
-    value: 20,
+    value: 5,
     color: 'hsl(9, 70%, 50%)'
   }
 ]
@@ -51,16 +52,19 @@ class Interests extends React.Component {
             <div className="chart-height interests">
               <ResponsivePie
                 data={data}
+                // sortByValue={true}
                 margin={{
                   top: 0,
                   right: 0,
                   bottom: 0,
-                  left: 0
+                  left: 180
                 }}
+                enableRadialLabels={false}
                 innerRadius={0.5}
-                padAngle={0.7}
+                isInteractive={false}
+                padAngle={2.5}
                 cornerRadius={3}
-                colors="nivo"
+                colors="pastel1"
                 colorBy="id"
                 borderWidth={1}
                 borderColor="inherit:darker(0.2)"
@@ -101,56 +105,44 @@ class Interests extends React.Component {
                 fill={[
                   {
                     match: {
-                      id: 'UX Design'
-                    },
-                    id: 'lines'
+                      id: 'Netflix'
+                    }
                   },
                   {
                     match: {
-                      id: 'Web Development'
+                      id: 'Sports'
                     },
                     id: 'dots'
                   },
                   {
                     match: {
-                      id: 'Arsenal'
-                    },
-                    id: 'lines'
-                  },
-                  {
-                    match: {
-                      id: 'elixir'
-                    },
-                    id: 'lines'
-                  },
-                  {
-                    match: {
-                      id: 'javascript'
+                      id: 'Travelling'
                     },
                     id: 'lines'
                   }
                 ]}
-                // legends={[
-                //   {
-                //     anchor: 'bottom',
-                //     direction: 'row',
-                //     itemDirection: 'top-to-bottom',
-                //     translateY: 50,
-                //     itemWidth: 160,
-                //     itemHeight: 18,
-                //     itemTextColor: '#999',
-                //     symbolSize: 18,
-                //     symbolShape: 'circle',
-                //     effects: [
-                //       {
-                //         on: 'hover',
-                //         style: {
-                //           itemTextColor: '#000'
-                //         }
-                //       }
-                //     ]
-                //   }
-                // ]}
+                legends={[
+                  {
+                    anchor: 'left',
+                    direction: 'column',
+                    itemDirection: 'left-to-right',
+                    // translateY: 80,
+                    translateX: -180,
+                    itemWidth: 140,
+                    itemHeight: 30,
+                    itemTextColor: '#999',
+                    symbolSize: 18,
+                    symbolShape: 'circle',
+                    effects: [
+                      {
+                        on: 'hover',
+                        style: {
+                          itemTextColor: '#000'
+                        }
+                      }
+                    ]
+                  }
+                ]}
               />
             </div>
           </div>
