@@ -8,7 +8,13 @@
   margin-bottom: -2px !important;
 }
 
-.sidebar {
+@media (min-width: $screen-lg) {
+  .burger-container {
+    display: none;
+  }
+}
+
+.mobile-nav {
   position: fixed;
   width: 100%;
   display: flex;
@@ -16,12 +22,18 @@
   flex-direction: column;
   align-items: center;
   background-color: #f6f9fa;
-  padding: 50px 10px;
   z-index: 900 !important;
   overflow: hidden;
   height: calc(100vh - 50px);
   transition: all 0.75s !important;
   opacity: 1;
+
+  .mobile-nav-content {
+    margin-top: -100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 
   @media (min-width: $screen-lg) {
     top: 80px;
@@ -38,9 +50,4 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
-}
-@media (min-width: $screen-lg) {
-  .burger-container {
-    display: none;
-  }
 }
