@@ -44,15 +44,15 @@
 }
 
 .btn-secondary {
-  background-color: inherit;
-  border: 1px solid #ddd;
+  background-color: $green-bg;
+  border: 1px solid #dee2e6;
   color: $primary-blue;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: darken(#eee, 10%) !important;
-    border: 1px solid darken(#eee, 10%) !important;
+    background-color: darken($green-bg, 5%) !important;
+    border: 1px solid #dee2e6;
     color: darken($primary-blue, 10%) !important;
   }
 }

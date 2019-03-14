@@ -1,8 +1,17 @@
+// body.modal-open {
+//   overflow: hidden;
+//   position: fixed;
+// }
+
 .model-open {
   overflow: hidden;
 }
 
 .modal-dialog {
+  @media (max-width: $screen-sm) {
+    margin: 1rem 0.5rem;
+  }
+
   @media (min-width: $screen-md) {
     max-width: 650px;
   }
@@ -27,7 +36,6 @@
 
     .company-brief {
       text-align: center;
-      padding: 20px 10px;
 
       p {
         font-family: $font-serif;
@@ -36,29 +44,26 @@
       }
     }
     .company-work {
-      border-top: 1px solid #dee2e6;
-      padding: 40px;
-
-      @media (min-width: $screen-sm) {
-        border-radius: 0 0 3px 3px;
+      p {
+        font-family: $font-sans-serif;
+        font-size: $font-size-normal;
+        line-height: $font-line-height-medium;
       }
-    }
-    p {
-      font-family: $font-sans-serif;
-      font-size: $font-size-normal;
-      line-height: $font-line-height-medium;
     }
 
     .modal-screenshot {
       margin: 60px auto 20px;
-      max-width: 90%;
+      padding: 0 1rem;
     }
 
     .modal-footer {
       flex-direction: column;
       align-items: flex-start;
+      border-top: 1px solid #dee2e6;
+      padding: 1.5rem 1rem;
       ul {
         padding-left: 20px;
+        margin-bottom: 0;
       }
     }
   }
