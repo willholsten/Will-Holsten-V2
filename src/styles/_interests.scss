@@ -6,8 +6,9 @@
     overflow: inherit;
   }
 
-  tspan {
+  text {
     font-family: $font-sans-serif;
+    color: $base-text;
   }
 }
 

@@ -18,7 +18,7 @@ import {
 
 export default class IndexPage extends React.Component {
   componentDidMount() {
-    configureAnchors({ offset: -60, scrollDuration: 400 })
+    configureAnchors({ offset: -30, scrollDuration: 400 })
     goToAnchor(
       'about',
       true,

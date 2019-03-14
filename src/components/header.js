@@ -8,22 +8,23 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props)
 
-    this.handleToggleMenu = this.handleToggleMenu.bind(this)
-
     this.state = {
-      menuOpen: false,
-      active: false,
-      isHidden: true
+      active: false
     }
+
+    this.handleToggleMenu = this.handleToggleMenu.bind(this)
   }
 
   handleToggleMenu() {
     this.setState({
-      isHidden: !this.state.isHidden,
       active: !this.state.active
     })
+    if (!this.state.active) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'visible'
+    }
   }
-
   render() {
     return (
       <nav>
@@ -67,7 +68,7 @@ export default class Header extends React.Component {
           </div>
         </Navbar>
         <MobileNav
-          className={!this.state.isHidden ? '' : 'hidden'}
+          className={this.state.active ? '' : 'hidden'}
           handleToggleMenu={this.handleToggleMenu}
         />
       </nav>

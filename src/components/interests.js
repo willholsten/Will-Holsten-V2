@@ -6,38 +6,32 @@ const data = [
   {
     id: 'Sports',
     label: 'Sports',
-    value: 30,
-    color: 'hsl(9, 70%, 50%)'
+    value: 30
   },
   {
     id: 'Travelling',
     label: 'Travelling',
-    value: 30,
-    color: 'hsl(9, 70%, 50%)'
+    value: 30
   },
   {
     id: 'Arsenal',
     label: 'Arsenal',
-    value: 10,
-    color: 'hsl(15, 70%, 50%)'
+    value: 10
   },
   {
     id: 'Nintendo Switch',
     label: 'Nintendo Switch',
-    value: 5,
-    color: 'hsl(9, 70%, 50%)'
+    value: 5
   },
   {
     id: 'Netflix',
     label: 'Netflix',
-    value: 10,
-    color: 'hsl(128, 70%, 50%)'
+    value: 10
   },
   {
     id: 'Electric Scooters',
     label: 'Electric Scooters',
-    value: 5,
-    color: 'hsl(9, 70%, 50%)'
+    value: 5
   }
 ]
 
@@ -104,11 +98,6 @@ class Interests extends React.Component {
                 fill={[
                   {
                     match: {
-                      id: 'Netflix'
-                    }
-                  },
-                  {
-                    match: {
                       id: 'Sports'
                     },
                     id: 'dots'
@@ -118,6 +107,30 @@ class Interests extends React.Component {
                       id: 'Travelling'
                     },
                     id: 'lines'
+                  },
+                  {
+                    match: {
+                      id: 'Arsenal'
+                    },
+                    id: 'dots'
+                  },
+                  {
+                    match: {
+                      id: 'Nintendo Switch'
+                    },
+                    id: 'lines'
+                  },
+                  {
+                    match: {
+                      id: 'Netflix'
+                    },
+                    id: 'dots'
+                  },
+                  {
+                    match: {
+                      id: 'Electric Scooters'
+                    },
+                    id: 'lines'
                   }
                 ]}
                 legends={[
@@ -125,11 +138,10 @@ class Interests extends React.Component {
                     anchor: 'left',
                     direction: 'column',
                     itemDirection: 'left-to-right',
-                    // translateY: 80,
                     translateX: -180,
                     itemWidth: 140,
                     itemHeight: 30,
-                    itemTextColor: '#999',
+                    itemTextColor: '#5f6d7e',
                     symbolSize: 18,
                     symbolShape: 'circle',
                     effects: [
