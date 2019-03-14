@@ -28,6 +28,13 @@ class About extends React.Component {
 
             <Col md={4} className="ml-auto">
               <Profile className="profile" />
+              <span className="image-text">
+                Me with an icream the size of my head{' '}
+                <span className="icecream">
+                  (vanilla, rhubarb crumble and clotted cream if you were
+                  wondering).
+                </span>
+              </span>
             </Col>
           </Row>
         </Container>
