@@ -9,11 +9,7 @@ export default class Contact extends React.Component {
         <Container>
           <h3 className="section-header">Get in Touch</h3>
 
-          <form
-            method="post"
-            action="/form-submission"
-            className="justify-content-center"
-          >
+          <form method="post" action="" className="justify-content-center">
             <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
@@ -53,6 +49,7 @@ export default class Contact extends React.Component {
                 <FontAwesomeIcon
                   className="chevron-right"
                   icon="chevron-right"
+                  type="submit"
                 />
               </Button>
             </ButtonToolbar>
