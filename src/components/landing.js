@@ -17,10 +17,7 @@ export default class Landing extends React.Component {
             <ButtonToolbar className="justify-content-center">
               <Button href="#contact" variant="primary">
                 Get in touch
-                <FontAwesomeIcon
-                  className="chevron-right"
-                  icon="chevron-right"
-                />
+                <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
               </Button>
               <Button href={WillHolstenCV} target="_blank" variant="primary">
                 <FontAwesomeIcon className="download" icon="download" />

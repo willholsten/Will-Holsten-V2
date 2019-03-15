@@ -46,11 +46,7 @@ export default class Contact extends React.Component {
             <ButtonToolbar>
               <Button link="" type="submit" label="Submit" variant="primary">
                 Submit
-                <FontAwesomeIcon
-                  className="chevron-right"
-                  icon="chevron-right"
-                  type="submit"
-                />
+                <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
               </Button>
             </ButtonToolbar>
           </form>

@@ -2,7 +2,7 @@
 $primary-green: #52a996;
 $primary-blue: #5f6d7e;
 $base-text: #333;
-$green-bg: #f6f9fa;
+$green-bg: lighten($primary-blue, 1%);
 
 // Font
 $font-serif: 'Taviraj', Arial, Helvetica, sans-serif;

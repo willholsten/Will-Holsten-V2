@@ -10,9 +10,9 @@ import '../styles/styles.scss'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faChevronRight, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faChevronRight, faDownload)
+library.add(fab, faDownload, faArrowRight)
 
 const Layout = ({ children }) => (
   <StaticQuery

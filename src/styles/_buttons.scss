@@ -4,7 +4,7 @@
   font-weight: $font-weight-semi-bold;
   transition: $transition;
   cursor: pointer;
-  padding: 12px 18px;
+  padding: 15px 25px;
   margin: 0;
   border: none;
   min-width: 160px;
@@ -21,10 +21,12 @@
 
   .download {
     margin-right: 15px;
+    transition: $transition;
   }
 
-  .chevron-right {
+  .arrow-right {
     margin-left: 15px;
+    transition: $transition;
   }
 
   @media (min-width: $screen-sm) {
@@ -40,6 +42,13 @@
   &:active,
   &:focus {
     background-color: darken($primary-green, 10%) !important;
+
+    .arrow-right {
+      transform: translate(0.2em, 0);
+    }
+    .download {
+      transform: translate(0, 0.2em);
+    }
   }
 }
 
