@@ -4,8 +4,8 @@ import { ResponsivePie } from '@nivo/pie'
 
 const data = [
   {
-    id: 'Sports',
-    label: 'Sports',
+    id: 'Sports (playing & watching)',
+    label: 'Sports (playing & watching)',
     value: 30
   },
   {
@@ -19,19 +19,9 @@ const data = [
     value: 10
   },
   {
-    id: 'Nintendo Switch',
-    label: 'Nintendo Switch',
-    value: 5
-  },
-  {
     id: 'Netflix',
     label: 'Netflix',
     value: 10
-  },
-  {
-    id: 'Electric Scooters',
-    label: 'Electric Scooters',
-    value: 5
   }
 ]
 
@@ -98,7 +88,7 @@ class Interests extends React.Component {
                 fill={[
                   {
                     match: {
-                      id: 'Sports'
+                      id: 'Sports (playing & watching)'
                     },
                     id: 'dots'
                   },
@@ -116,19 +106,7 @@ class Interests extends React.Component {
                   },
                   {
                     match: {
-                      id: 'Nintendo Switch'
-                    },
-                    id: 'lines'
-                  },
-                  {
-                    match: {
                       id: 'Netflix'
-                    },
-                    id: 'dots'
-                  },
-                  {
-                    match: {
-                      id: 'Electric Scooters'
                     },
                     id: 'lines'
                   }
