@@ -94,7 +94,7 @@ export default class Work extends React.Component {
                 Worked from UX designs to rebuild the front end checkout and
                 mobile upgrade journeys.
               </li>
-              <li>Built re-usable components using PHP Symfony framework</li>
+              <li>Built re-usable components using PHP Symfony framework.</li>
               <li>
                 The development environment used a Docker container for ease of
                 sharing the project.
@@ -328,7 +328,7 @@ export default class Work extends React.Component {
           onHide={this.handleClose}
         >
           <Modal.Header closeButton className="green-bg">
-            <Modal.Title>SF Confectionery</Modal.Title>
+            <Modal.Title>S&F Confectionery</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <div className="company-brief">
@@ -342,10 +342,7 @@ export default class Work extends React.Component {
                   target="_blank"
                 >
                   Visit Site
-                  <FontAwesomeIcon
-                    className="chevron-right"
-                    icon="chevron-right"
-                  />
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
                 </Button>
               </ButtonToolbar>
               <img
@@ -358,7 +355,7 @@ export default class Work extends React.Component {
           <Modal.Footer className="green-bg company-work">
             <h3>The Goal</h3>
             <p>
-              To create a website that would be used as a catalog to other
+              To create a website that would be used as a catalog for other
               businesses to show product and packaging information.
             </p>
             <h3>How I Helped</h3>

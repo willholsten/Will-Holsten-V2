@@ -19,6 +19,15 @@
     box-shadow: none !important;
   }
 
+  &:hover {
+    .arrow-right {
+      transform: translate(0.2em, 0);
+    }
+    .download {
+      transform: translate(0, 0.2em);
+    }
+  }
+
   .download {
     margin-right: 15px;
     transition: $transition;
@@ -41,14 +50,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($primary-green, 10%) !important;
-
-    .arrow-right {
-      transform: translate(0.2em, 0);
-    }
-    .download {
-      transform: translate(0, 0.2em);
-    }
+    background-color: darken($primary-green, 2%) !important;
   }
 }
 
@@ -60,7 +62,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($green-bg, 5%) !important;
+    background-color: $green-bg !important;
     border: 1px solid #dee2e6;
     color: darken($primary-blue, 10%) !important;
   }
