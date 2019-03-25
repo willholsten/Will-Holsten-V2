@@ -1,33 +1,36 @@
 .landing {
+  display: flex;
   position: relative;
   overflow: hidden;
   height: calc(100vh - 100px);
-
-  .logotype-w {
-    font-family: $font-serif;
-    color: $primary-green;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-size: 180px;
-    line-height: 160px;
-    opacity: 0.15;
-    margin: 0;
-    overflow: hidden;
-
-    @media (min-width: $screen-sm) {
-      font-size: 260px;
-      line-height: 200px;
-    }
-  }
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
   .hero {
-    padding-top: 160px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
     text-align: center;
 
-    @media (min-width: $screen-sm) {
-      padding-top: 180px;
+    .logotype-w {
+      font-family: $font-serif;
+      color: $primary-green;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 180px;
+      line-height: 160px;
+      opacity: 0.15;
+      margin: 0;
+      overflow: hidden;
+
+      @media (min-width: $screen-sm) {
+        font-size: 260px;
+        line-height: 200px;
+        top: -80px;
+      }
     }
 
     .hero-name {
@@ -49,22 +52,6 @@
         font-size: $font-size-xlarge;
         line-height: $font-line-height-xlarge;
       }
-    }
-  }
-  .round {
-    background-color: #fff;
-    position: absolute;
-    bottom: -120px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 120%;
-    height: 0px;
-    margin: 0 auto;
-    border-radius: 35%;
-    padding-top: 160px;
-
-    @media (min-width: $screen-sm) {
-      border-radius: 70%;
     }
   }
 }
