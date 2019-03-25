@@ -6,7 +6,7 @@ import WillHolstenCV from '../images/WillHolstenCV.pdf'
 export default class Landing extends React.Component {
   render() {
     return (
-      <Container className="landing green-bg">
+      <Container className="landing section-bg">
         <div className="hero">
           <h1 className="hero-name">Will Holsten</h1>
           <p className="hero-description">

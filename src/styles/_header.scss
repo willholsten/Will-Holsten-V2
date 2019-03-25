@@ -5,7 +5,6 @@
   align-items: center;
   text-transform: uppercase;
   background-color: #fff;
-  // border-bottom: 1px solid rgba(#dee2e6, 0.9);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 50px;
 
@@ -16,12 +15,14 @@
   .navbar-brand {
     font-family: $font-serif;
     font-size: $font-size-large;
-    color: lighten($primary-green, 30%);
+    color: $primary;
     font-weight: $font-weight-semi-bold;
+    opacity: 0.5;
     transition: $transition;
 
     &:hover {
-      color: $primary-green;
+      color: $primary;
+      opacity: 1;
       text-decoration: none;
     }
   }

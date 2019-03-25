@@ -43,7 +43,7 @@ export default class Work extends React.Component {
 
   render() {
     return (
-      <div className="section-container green-bg work-container">
+      <div className="section-container section-bg work-container">
         <Container>
           <h3 className="section-header">Latest Work</h3>
         </Container>
@@ -52,7 +52,7 @@ export default class Work extends React.Component {
           show={this.state.show === 'idmobileModal'}
           onHide={this.handleClose}
         >
-          <Modal.Header closeButton className="green-bg">
+          <Modal.Header closeButton className="section-bg">
             <Modal.Title>iD Mobile</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -79,7 +79,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Footer className="green-bg company-work">
+          <Modal.Footer className="section-bg company-work">
             <h3>The Goal</h3>
             <p>
               To upgrade the iD Mobile basket and checkout to align with other
@@ -108,7 +108,7 @@ export default class Work extends React.Component {
           show={this.state.show === 'stolbergModal'}
           onHide={this.handleClose}
         >
-          <Modal.Header closeButton className="green-bg">
+          <Modal.Header closeButton className="section-bg">
             <Modal.Title>The Stolberg</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -134,7 +134,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Footer className="green-bg company-work">
+          <Modal.Footer className="section-bg company-work">
             <h3>The Goal</h3>
             <p>
               To replace the outdated Wordpress website into something that
@@ -160,7 +160,7 @@ export default class Work extends React.Component {
           show={this.state.show === 'royalDerbyModal'}
           onHide={this.handleClose}
         >
-          <Modal.Header closeButton className="green-bg">
+          <Modal.Header closeButton className="section-bg">
             <Modal.Title>Royal Derby Hotel</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -186,7 +186,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Footer className="green-bg company-work">
+          <Modal.Footer className="section-bg company-work">
             <h3>The Goal</h3>
             <p>
               To create a mobile first website with scalable component based
@@ -207,7 +207,7 @@ export default class Work extends React.Component {
         </Modal>
         {/* Jizz Modal */}
         <Modal show={this.state.show === 'jizzModal'} onHide={this.handleClose}>
-          <Modal.Header closeButton className="green-bg">
+          <Modal.Header closeButton className="section-bg">
             <Modal.Title>Jizz - The Drinking Game</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -233,7 +233,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Footer className="green-bg company-work">
+          <Modal.Footer className="section-bg company-work">
             <h3>The Goal</h3>
             <p>
               To create a simple straightforward website to explain how to play
@@ -255,7 +255,7 @@ export default class Work extends React.Component {
           show={this.state.show === 'surfdomeModal'}
           onHide={this.handleClose}
         >
-          <Modal.Header closeButton className="green-bg">
+          <Modal.Header closeButton className="section-bg">
             <Modal.Title>Surfdome</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -281,7 +281,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Footer className="green-bg company-work">
+          <Modal.Footer className="section-bg company-work">
             <h3>The Goal</h3>
             <p>
               I was employed as a UX designer / front end developer at Surfdome
@@ -312,7 +312,7 @@ export default class Work extends React.Component {
           show={this.state.show === 'sfconfectionery'}
           onHide={this.handleClose}
         >
-          <Modal.Header closeButton className="green-bg">
+          <Modal.Header closeButton className="section-bg">
             <Modal.Title>S&F Confectionery</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -337,7 +337,7 @@ export default class Work extends React.Component {
               />
             </div>
           </Modal.Body>
-          <Modal.Footer className="green-bg company-work">
+          <Modal.Footer className="section-bg company-work">
             <h3>The Goal</h3>
             <p>
               To create a website that would be used as a catalog for other

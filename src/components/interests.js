@@ -28,7 +28,7 @@ const data = [
 class Interests extends React.Component {
   render() {
     return (
-      <div className="section-container green-bg">
+      <div className="section-container section-bg">
         <Container>
           <h3 className="section-header">Interests</h3>
           <div className="chart-container">

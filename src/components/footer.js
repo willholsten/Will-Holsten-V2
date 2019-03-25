@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap'
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="section-container green-bg">
+      <div className="section-container section-bg">
         <Container>
           <footer>
             <a href="/" className="footer-brand">

@@ -45,25 +45,11 @@
 }
 
 .btn-primary {
-  background-color: $primary-green;
+  background-color: $primary;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($primary-green, 2%) !important;
-  }
-}
-
-.btn-secondary {
-  background-color: $green-bg;
-  border: 1px solid #dee2e6;
-  color: $primary-blue;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $green-bg !important;
-    border: 1px solid #dee2e6;
-    color: darken($primary-blue, 10%) !important;
+    background-color: darken($primary, 2%) !important;
   }
 }
