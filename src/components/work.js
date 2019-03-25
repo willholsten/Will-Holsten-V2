@@ -64,15 +64,12 @@ export default class Work extends React.Component {
               </p>
               <ButtonToolbar className="justify-content-center">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   href="https://www.idmobile.co.uk"
                   target="_blank"
                 >
                   Visit Site
-                  <FontAwesomeIcon
-                    className="chevron-right"
-                    icon="chevron-right"
-                  />
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
                 </Button>
               </ButtonToolbar>
               <img
@@ -122,15 +119,12 @@ export default class Work extends React.Component {
               </p>
               <ButtonToolbar className="justify-content-center">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   href="https://www.stolberg.com.au"
                   target="_blank"
                 >
                   Visit Site
-                  <FontAwesomeIcon
-                    className="chevron-right"
-                    icon="chevron-right"
-                  />
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
                 </Button>
               </ButtonToolbar>
               <img
@@ -177,15 +171,12 @@ export default class Work extends React.Component {
               </p>
               <ButtonToolbar className="justify-content-center">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   href="https://www.royalderbyhotel.com.au"
                   target="_blank"
                 >
                   Visit Site
-                  <FontAwesomeIcon
-                    className="chevron-right"
-                    icon="chevron-right"
-                  />
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
                 </Button>
               </ButtonToolbar>
               <img
@@ -227,15 +218,12 @@ export default class Work extends React.Component {
               </p>
               <ButtonToolbar className="justify-content-center">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   href="https://www.jizzthegame.com"
                   target="_blank"
                 >
                   Visit Site
-                  <FontAwesomeIcon
-                    className="chevron-right"
-                    icon="chevron-right"
-                  />
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
                 </Button>
               </ButtonToolbar>
               <img
@@ -278,15 +266,12 @@ export default class Work extends React.Component {
               </p>
               <ButtonToolbar className="justify-content-center">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   href="https://www.surfdome.com"
                   target="_blank"
                 >
                   Visit Site
-                  <FontAwesomeIcon
-                    className="chevron-right"
-                    icon="chevron-right"
-                  />
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
                 </Button>
               </ButtonToolbar>
               <img
@@ -337,7 +322,7 @@ export default class Work extends React.Component {
               </p>
               <ButtonToolbar className="justify-content-center">
                 <Button
-                  variant="secondary"
+                  variant="primary"
                   href="https://www.sfconfectiony.com"
                   target="_blank"
                 >

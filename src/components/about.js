@@ -12,12 +12,12 @@ class About extends React.Component {
             <Col md={6}>
               <p>Hey, I'm Will, a front end developer based in London, UK.</p>
               <p>
-                Originally from Australia, I graduated from The University of
-                Adelaide with a Bachelor of Design Studies. Since then I have
-                grown a huge interest in UX design and front end development.
-                Having now worked in both of these fields for a number of years,
-                I have extensive experience working in multi-functional, agile
-                team environments with a primary focus on eCommerce solutions.
+                Born in South Australia, I graduated from The University of
+                Adelaide with a Bachelor of Design Studies and have since grown
+                an interest in both UX design and front end development. Having
+                now worked in both of these fields for a number of years, I have
+                extensive experience working in multi-functional, agile team
+                environments with a primary focus on eCommerce solutions.
               </p>
               <p>
                 Besides my interests in technology and the web I also enjoy
