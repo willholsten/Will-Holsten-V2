@@ -9,7 +9,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Raleway:400,600,700', 'Taviraj:200,300,400,600,700']
+          families: ['Nunito:400,600,700', 'Taviraj:200,300,400,600,700']
         }
       }
     },

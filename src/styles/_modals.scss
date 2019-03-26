@@ -44,8 +44,6 @@
 
       p {
         font-family: $font-serif;
-        font-size: $font-size-medium;
-        line-height: $font-line-height-large;
       }
     }
     .company-work {
@@ -56,6 +54,9 @@
         line-height: $font-line-height-medium;
         font-weight: 400;
         letter-spacing: 0;
+      }
+      li {
+        margin-bottom: 5px;
       }
     }
 
