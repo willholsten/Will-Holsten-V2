@@ -190,7 +190,7 @@ export default class Work extends React.Component {
             <h3>The Goal</h3>
             <p>
               To create a mobile first website with scalable component based
-              code. it was a priority to make the foof + drink menus and booking
+              code. it was a priority to make the food + drink menus and booking
               functionality as accessible as possible, as well as displaying the
               various events held by the hotel including a live sports schedule.
             </p>
