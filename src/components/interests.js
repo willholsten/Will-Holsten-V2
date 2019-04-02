@@ -19,8 +19,8 @@ const data = [
     value: 10
   },
   {
-    id: 'Netflix',
-    label: 'Netflix',
+    id: 'Game of Thrones',
+    label: 'Game of Thrones',
     value: 10
   }
 ]
@@ -106,7 +106,7 @@ class Interests extends React.Component {
                   },
                   {
                     match: {
-                      id: 'Netflix'
+                      id: 'Game of Thrones'
                     },
                     id: 'lines'
                   }
