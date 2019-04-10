@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-// import Atlassian from './../images/skills/atlassian.svg'
 
 export default class Footer extends React.Component {
   render() {

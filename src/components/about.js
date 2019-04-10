@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import ScrollAnimation from 'react-animate-on-scroll'
 import Profile from './image'
 
 class About extends React.Component {
@@ -10,31 +11,36 @@ class About extends React.Component {
           <h3 className="section-header">A little about me</h3>
           <Row className="about-content">
             <Col md={6}>
-              <p>Hey, I'm Will, a front end developer based in London, UK.</p>
-              <p>
-                Born in South Australia, I graduated from The University of
-                Adelaide with a Bachelor of Design Studies and have since grown
-                an interest in both UX design and front end development. Having
-                now worked in both of these fields for a number of years, I have
-                extensive experience working in multi-functional, agile team
-                environments with a primary focus on eCommerce solutions.
-              </p>
-              <p>
-                Besides my interests in technology and the web I also enjoy
-                watching football, generally being active and following various
-                dog breeds on Instagram.
-              </p>
+              <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut">
+                <p>Hey, I'm Will, a front end developer based in London, UK.</p>
+                <p>
+                  Born in South Australia, I graduated from The University of
+                  Adelaide with a Bachelor of Design Studies and have since
+                  grown an interest in both UX design and front end development.
+                  Having now worked in both of these fields for a number of
+                  years, I have extensive experience working in
+                  multi-functional, agile team environments with a primary focus
+                  on eCommerce solutions.
+                </p>
+                <p>
+                  Besides my interests in technology and the web I also enjoy
+                  watching football, generally being active and following
+                  various dog breeds on Instagram.
+                </p>
+              </ScrollAnimation>
             </Col>
 
             <Col md={4} className="ml-auto">
-              <Profile className="profile" />
-              <span className="image-text">
-                Me with an ice cream the size of my head{' '}
-                <span className="icecream">
-                  (vanilla, rhubarb crumble and clotted cream if you were
-                  wondering).
+              <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOut">
+                <Profile className="profile" />
+                <span className="image-text">
+                  Me with an ice cream the size of my head{' '}
+                  <span className="icecream">
+                    (vanilla, rhubarb crumble and clotted cream if you were
+                    wondering).
+                  </span>
                 </span>
-              </span>
+              </ScrollAnimation>
             </Col>
           </Row>
         </Container>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // Assets
 import Html from '../images/brands/html.svg'
@@ -95,8 +96,18 @@ class TechStack extends React.Component {
           <Row className="skills">
             {this.state.skills.map(skill => (
               <Col xs={4} sm={3} key={skill.name}>
-                <img src={skill.path} alt={skill.name} className="skill-icon" />
-                {skill.name}
+                <ScrollAnimation
+                  className="header-animation"
+                  animateIn="fadeInDown"
+                  animateOut="fadeOutUp"
+                >
+                  <img
+                    src={skill.path}
+                    alt={skill.name}
+                    className="skill-icon"
+                  />
+                  {skill.name}
+                </ScrollAnimation>
               </Col>
             ))}
           </Row>

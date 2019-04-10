@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Will Holsten | Front End Development, London`,
-    description: `Hey, I'm Will! A UX designer and front end developer based in London.`,
+    description: `Hey, I'm Will! A front end developer based in London.`,
     author: `@gatsbyjs`
   },
   plugins: [

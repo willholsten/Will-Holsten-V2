@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { ResponsivePie } from '@nivo/pie'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const data = [
   {
@@ -32,108 +33,114 @@ class Interests extends React.Component {
         <Container>
           <h3 className="section-header">Interests</h3>
           <div className="chart-container">
-            <div className="chart-height interests">
-              <ResponsivePie
-                data={data}
-                // sortByValue={true}
-                margin={{
-                  top: 0,
-                  right: 0,
-                  bottom: 0,
-                  left: 180
-                }}
-                enableRadialLabels={false}
-                innerRadius={0.5}
-                isInteractive={false}
-                padAngle={2.5}
-                cornerRadius={3}
-                colors="pastel1"
-                colorBy="id"
-                borderWidth={1}
-                borderColor="inherit:darker(0.2)"
-                radialLabelsSkipAngle={10}
-                radialLabelsTextXOffset={6}
-                radialLabelsTextColor="#333333"
-                radialLabelsLinkOffset={0}
-                radialLabelsLinkDiagonalLength={16}
-                radialLabelsLinkHorizontalLength={24}
-                radialLabelsLinkStrokeWidth={1}
-                radialLabelsLinkColor="inherit"
-                sliceLabel=""
-                slicesLabelsSkipAngle={10}
-                slicesLabelsTextColor="#333333"
-                animate={true}
-                motionStiffness={90}
-                motionDamping={15}
-                defs={[
-                  {
-                    id: 'dots',
-                    type: 'patternDots',
-                    background: 'inherit',
-                    color: 'rgba(255, 255, 255, 0.3)',
-                    size: 4,
-                    padding: 1,
-                    stagger: true
-                  },
-                  {
-                    id: 'lines',
-                    type: 'patternLines',
-                    background: 'inherit',
-                    color: 'rgba(255, 255, 255, 0.3)',
-                    rotation: -45,
-                    lineWidth: 6,
-                    spacing: 10
-                  }
-                ]}
-                fill={[
-                  {
-                    match: {
-                      id: 'Sports (playing & watching)'
+            <ScrollAnimation
+              className="header-animation"
+              animateIn="fadeIn"
+              animateOut="fadeOut"
+            >
+              <div className="chart-height interests">
+                <ResponsivePie
+                  data={data}
+                  // sortByValue={true}
+                  margin={{
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    left: 180
+                  }}
+                  enableRadialLabels={false}
+                  innerRadius={0.5}
+                  isInteractive={false}
+                  padAngle={2.5}
+                  cornerRadius={3}
+                  colors="pastel1"
+                  colorBy="id"
+                  borderWidth={1}
+                  borderColor="inherit:darker(0.2)"
+                  radialLabelsSkipAngle={10}
+                  radialLabelsTextXOffset={6}
+                  radialLabelsTextColor="#333333"
+                  radialLabelsLinkOffset={0}
+                  radialLabelsLinkDiagonalLength={16}
+                  radialLabelsLinkHorizontalLength={24}
+                  radialLabelsLinkStrokeWidth={1}
+                  radialLabelsLinkColor="inherit"
+                  sliceLabel=""
+                  slicesLabelsSkipAngle={10}
+                  slicesLabelsTextColor="#333333"
+                  animate={true}
+                  motionStiffness={90}
+                  motionDamping={15}
+                  defs={[
+                    {
+                      id: 'dots',
+                      type: 'patternDots',
+                      background: 'inherit',
+                      color: 'rgba(255, 255, 255, 0.3)',
+                      size: 4,
+                      padding: 1,
+                      stagger: true
                     },
-                    id: 'dots'
-                  },
-                  {
-                    match: {
-                      id: 'Travelling'
+                    {
+                      id: 'lines',
+                      type: 'patternLines',
+                      background: 'inherit',
+                      color: 'rgba(255, 255, 255, 0.3)',
+                      rotation: -45,
+                      lineWidth: 6,
+                      spacing: 10
+                    }
+                  ]}
+                  fill={[
+                    {
+                      match: {
+                        id: 'Sports (playing & watching)'
+                      },
+                      id: 'dots'
                     },
-                    id: 'lines'
-                  },
-                  {
-                    match: {
-                      id: 'Arsenal'
+                    {
+                      match: {
+                        id: 'Travelling'
+                      },
+                      id: 'lines'
                     },
-                    id: 'dots'
-                  },
-                  {
-                    match: {
-                      id: 'Game of Thrones'
+                    {
+                      match: {
+                        id: 'Arsenal'
+                      },
+                      id: 'dots'
                     },
-                    id: 'lines'
-                  }
-                ]}
-                legends={[
-                  {
-                    anchor: 'left',
-                    direction: 'column',
-                    itemDirection: 'left-to-right',
-                    translateX: -180,
-                    itemWidth: 140,
-                    itemHeight: 30,
-                    itemTextColor: '#5f6d7e',
-                    symbolSize: 18,
-                    symbolShape: 'circle',
-                    effects: [
-                      {
-                        on: 'hover',
-                        style: {
-                          itemTextColor: '#000'
+                    {
+                      match: {
+                        id: 'Game of Thrones'
+                      },
+                      id: 'lines'
+                    }
+                  ]}
+                  legends={[
+                    {
+                      anchor: 'left',
+                      direction: 'column',
+                      itemDirection: 'left-to-right',
+                      translateX: -180,
+                      itemWidth: 140,
+                      itemHeight: 30,
+                      itemTextColor: '#5f6d7e',
+                      symbolSize: 18,
+                      symbolShape: 'circle',
+                      effects: [
+                        {
+                          on: 'hover',
+                          style: {
+                            itemTextColor: '#000'
+                          }
                         }
-                      }
-                    ]
-                  }
-                ]}
-              />
-            </div>
+                      ]
+                    }
+                  ]}
+                />
+              </div>
+            </ScrollAnimation>
           </div>
         </Container>
       </div>
