@@ -40,7 +40,7 @@ export default class Landing extends React.Component {
                 View Work
                 <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
               </Button>
-              <Button variant="primary">
+              <Button variant="primary" href="/cv/">
                 CV
                 <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
               </Button>
