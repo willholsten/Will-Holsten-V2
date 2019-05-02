@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, ButtonToolbar, Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ScrollAnimation from 'react-animate-on-scroll'
-import WillHolstenCV from '../images/WillHolstenCV.pdf'
+import { Link } from 'gatsby'
 
 export default class Landing extends React.Component {
   render() {
@@ -40,10 +40,12 @@ export default class Landing extends React.Component {
                 View Work
                 <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
               </Button>
-              <Button href={WillHolstenCV} target="_blank" variant="primary">
-                <FontAwesomeIcon className="download" icon="download" />
-                CV
-              </Button>
+              <Link to="/cv/">
+                <Button variant="primary">
+                  <FontAwesomeIcon className="arrow-right" icon="arrow-right" />
+                  CV
+                </Button>
+              </Link>
             </ButtonToolbar>
           </ScrollAnimation>
         </div>

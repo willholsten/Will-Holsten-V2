@@ -11,6 +11,8 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Assets
+import weatherApp from '../images/weather-app.png'
+import weatherAppModal from '../images/modals/weather-app-modal.png'
 import idmobile from '../images/idmobile.png'
 import idmobileModal from '../images/modals/idmobile-modal.png'
 import stolberg from '../images/stolberg.png'
@@ -31,6 +33,24 @@ export default class Work extends React.Component {
     this.state = {
       show: false,
       work: [
+        {
+          title: 'Weather App',
+          image: weatherApp,
+          modal: 'weatherAppModal',
+          modalImage: weatherAppModal,
+          background: 'weather-app-bg',
+          summary: 'A personal project to create a React Weather App',
+          link: 'https://willholsten-weather-app.netlify.com/',
+          goal:
+            'To create a weather app using RESTful APIs to pull in data and photos.',
+          helped: [
+            'Custom design and built with React.',
+            'Apixu Weather API.',
+            'Unsplash Photos API.',
+            'Find weather by current location.',
+            'Find weahter by a search query which includes a list of relative search results.'
+          ]
+        },
         {
           title: 'iD Mobile',
           image: idmobile,

@@ -3,7 +3,6 @@ import { Nav, Navbar, Container } from 'react-bootstrap'
 import MobileNav from './mobileNav'
 import { Spring } from 'react-burgers'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ScrollAnimation from 'react-animate-on-scroll'
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -30,58 +29,47 @@ export default class Header extends React.Component {
     return (
       <nav>
         <Navbar expand="lg" fixed="top">
-          <ScrollAnimation
-            className="header-animation"
-            animateIn="fadeInDown"
-            offset={0}
-            animateOnce="tue"
-            delay={2000}
-          >
-            <Container>
-              <Navbar.Brand href="/">W</Navbar.Brand>
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                  <Nav.Link href="#about">About</Nav.Link>
-                  <Nav.Link href="#interests">Interests</Nav.Link>
-                  <Nav.Link href="#tech-stack">Tech Stack</Nav.Link>
-                  <Nav.Link href="#work">Work</Nav.Link>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
-                  <Nav.Link
-                    target="_blank"
-                    href="https://www.linkedin.com/in/willholsten/"
-                    className="navbar-icon"
-                  >
-                    <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                  </Nav.Link>
-                  <Nav.Link
-                    target="_blank"
-                    href="https://github.com/willholsten"
-                    className="navbar-icon"
-                  >
-                    <FontAwesomeIcon icon={['fab', 'github']} />
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
+          <Container>
+            <Navbar.Brand href="/">W</Navbar.Brand>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link href="/#about">About</Nav.Link>
+                <Nav.Link href="/#interests">Interests</Nav.Link>
+                <Nav.Link href="#tech-stack">Tech Stack</Nav.Link>
+                <Nav.Link href="#work">Work</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/willholsten/"
+                  className="navbar-icon"
+                >
+                  <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                </Nav.Link>
+                <Nav.Link
+                  target="_blank"
+                  href="https://github.com/willholsten"
+                  className="navbar-icon"
+                >
+                  <FontAwesomeIcon icon={['fab', 'github']} />
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
 
-              <div className="burger-container">
-                <Spring
-                  onClick={() => this.handleToggleMenu()}
-                  active={this.state.active}
-                  width={20}
-                  lineHeight={2}
-                  lineSpacing={4}
-                  borderRadius={2}
-                  color="#94A0AF"
-                />
-              </div>
-            </Container>
-          </ScrollAnimation>
+            <div className="burger-container">
+              <Spring
+                onClick={() => this.handleToggleMenu()}
+                active={this.state.active}
+                width={20}
+                lineHeight={2}
+                lineSpacing={4}
+                borderRadius={2}
+                color="#94A0AF"
+              />
+            </div>
+          </Container>
         </Navbar>
         {this.state.active && (
-          <MobileNav
-            // className={this.state.active ? '' : 'hidden'}
-            handleToggleMenu={this.handleToggleMenu}
-          />
+          <MobileNav handleToggleMenu={this.handleToggleMenu} />
         )}
       </nav>
     )

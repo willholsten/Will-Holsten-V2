@@ -9,7 +9,7 @@ export default class MobileNav extends React.Component {
             onClick={this.props.handleToggleMenu}
             id="about"
             className="menu-item"
-            href="#about"
+            href="/#about"
           >
             About
           </a>
