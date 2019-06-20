@@ -40,7 +40,7 @@ export default class Work extends React.Component {
           modalImage: weatherAppModal,
           background: 'weather-app-bg',
           summary: 'A personal project to create a React Weather App',
-          link: 'https://willholsten-weather-app.netlify.com/',
+          link: 'https://wh-weather-app.netlify.com',
           goal:
             'To create a weather app using RESTful APIs to pull in data and photos.',
           helped: [
